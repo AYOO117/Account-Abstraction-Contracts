@@ -5,19 +5,6 @@ website link-https://account-abstraction-xi.vercel.app/
 
 This repository contains the smart contracts for the Smart Contract Wallet (SCW) project, a multi-signature wallet leveraging account abstraction on Ethereum. The SCW allows multiple signers to control a single wallet, enhancing security and flexibility.
 
-contracts/
-│
-├── src/
-│   ├── Wallet.sol
-│   ├── WalletFactory.sol    
-│
-├── tests/
-│   └── networkConnection.test.js
-│
-├── scripts/
-│   └── WalletFactory.s.sol
-│
-└── README.md
 
 ## Smart Contracts
 - Wallet.sol
@@ -26,7 +13,7 @@ The main smart contract for the multi-signature wallet. This contract allows mul
 - WalletFactory.sol
 A factory contract to deploy new instances of the Wallet contract. This contract also computes the counterfactual address of the wallet before deployment.
 
-##Installation and Setup with Foundry
+## Installation and Setup with Foundry
 
 - Install Foundry: curl -L https://foundry.paradigm.xyz | bash
 foundryup
@@ -36,5 +23,5 @@ cd scw-contracts/contracts
 - forge build
 - forge script scripts/Deploy.s.sol --rpc-url <SEPOLIA_RPC_URL> --private-key <YOUR_PRIVATE_KEY> --broadcast
 - forge test
-- 
+
 This project is licensed under the GPL-3.0 License
